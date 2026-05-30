@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard DRHKAT</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f4f6f8; }
+    h1 { text-align: center; color: #333; }
+    .kpi { display: flex; justify-content: space-around; margin: 20px 0; }
+    .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+    th { background: #007acc; color: white; }
+    .status { font-weight: bold; }
+    .green { color: green; }
+    .yellow { color: orange; }
+    .red { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Dashboard Consolidé DRHKAT</h1>
+
+  <!-- Indicateurs clés -->
+  <div class="kpi">
+    <div class="card">
+      <h2>Total Équipements</h2>
+      <p>120</p>
+    </div>
+    <div class="card">
+      <h2>Disponibilité</h2>
+      <p>92%</p>
+    </div>
+    <div class="card">
+      <h2>Temps moyen de réparation</h2>
+      <p>3 jours</p>
+    </div>
+  </div>
+
+  <!-- Inventaire -->
+  <h2>Inventaire des Équipements</h2>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Type</th>
+      <th>Modèle</th>
+      <th>Utilisateur</th>
+      <th>État</th>
+    </tr>
+    <tr>
+      <td>PC-001</td>
+      <td>Ordinateur</td>
+      <td>Dell Optiplex</td>
+      <td>Jean</td>
+      <td class="status green">Opérationnel</td>
+    </tr>
+    <tr>
+      <td>IMP-002</td>
+      <td>Imprimante</td>
+      <td>HP LaserJet</td>
+      <td>Site A</td>
+      <td class="status yellow">En maintenance</td>
+    </tr>
+    <tr>
+      <td>SCN-003</td>
+      <td>Scanner</td>
+      <td>Epson X200</td>
+      <td>Site B</td>
+      <td class="status red">Hors service</td>
+    </tr>
+  </table>
+</body>
+</html>
